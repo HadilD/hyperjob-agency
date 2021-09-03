@@ -2,5 +2,5 @@ from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
-    path('', views.get_vacancies)
+    path('', views.VacancyView.as_view())
 ]

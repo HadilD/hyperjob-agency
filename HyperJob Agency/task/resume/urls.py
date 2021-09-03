@@ -2,5 +2,5 @@ from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
-    path('', views.get_resumes)
+    path('', views.ResumeView.as_view()),
 ]
